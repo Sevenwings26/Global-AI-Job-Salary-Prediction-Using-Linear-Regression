@@ -1,10 +1,14 @@
 import streamlit as st
 import pandas as pd 
 import joblib
+import os
 
 
 # Load trained model
-model = joblib.load('salary_model.pkl')
+# model = joblib.load('salary_model.pkl')
+
+model_path = os.path.join(os.path.dirname(__file__), 'salary_model.pkl')
+model = joblib.load(model_path)
 
 st.header("Interactive Artificial Intelligence Salary App.")
 
