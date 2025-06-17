@@ -10,10 +10,11 @@ import os
 model_path = os.path.join(os.path.dirname(__file__), 'salary_model.pkl')
 model = joblib.load(model_path)
 
-st.header("Interactive Artificial Intelligence Salary App.")
+st.header("Interactive AI Salary Predictor")
 
-st.markdown("Predict the estimated salary (USD) for an AI/Data related job based on selected inputs.")
-st.markdown("Data Source: _www.kaggle.com_")
+st.markdown("Use this tool to **predict the estimated salary (in USD)** for roles related to AI and Data Science, based on key job-related factors such as experience, education level, employment_type, industry, and region.")
+st.markdown("📁 Data Source: _[Kaggle](https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025)_")
+st.markdown("🔗 Repository: _[Github](https://github.com/Sevenwings26/Global-AI-Job-Salary-Prediction-Using-Linear-Regression.git)_")
 
 # Sidebar inputs
 st.sidebar.header("Select Features")
